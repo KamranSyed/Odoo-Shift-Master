@@ -9,6 +9,11 @@ class Shift(models.Model):
 
 	name 			= fields.Char(required=True)
 	description 	= fields.Char()
-	workplace		= fields.Many2one('ksworkplace.workplace', string="Workplace")
+	start_hours		= fields.Integer()
+	start_minutes	= fields.Integer()
+	end_hours		= fields.Integer()
+	end_minutes		= fields.Integer()
+	grace_minutes	= fields.Integer()
+# Days or Dates should never be part of shift.
 
 	active			= fields.Boolean('Active?', default=True)
