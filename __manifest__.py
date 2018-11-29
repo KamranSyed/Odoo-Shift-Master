@@ -17,7 +17,7 @@
     'application': True,
 	'auto_install': True,
     'category': 'Human Resources',
-    'depends': ['base', 'hr', 'ksteam'],
+    'depends': ['base', 'hr', 'ksteam', 'ksworkplace'],
 
     # always loaded
     'data': [
