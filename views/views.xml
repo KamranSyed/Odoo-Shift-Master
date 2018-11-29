@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="ksshiftmaster.list">
+      <field name="name">ksshiftmaster list</field>
+      <field name="model">ksshiftmaster.ksshiftmaster</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="ksshiftmaster.action_window">
+      <field name="name">ksshiftmaster window</field>
+      <field name="res_model">ksshiftmaster.ksshiftmaster</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="ksshiftmaster.action_server">
+      <field name="name">ksshiftmaster server</field>
+      <field name="model_id" ref="model_ksshiftmaster_ksshiftmaster"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="ksshiftmaster" id="ksshiftmaster.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="ksshiftmaster.menu_1" parent="ksshiftmaster.menu_root"/>
+    <menuitem name="Menu 2" id="ksshiftmaster.menu_2" parent="ksshiftmaster.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="ksshiftmaster.menu_1_list" parent="ksshiftmaster.menu_1"
+              action="ksshiftmaster.action_window"/>
+    <menuitem name="Server to list" id="ksshiftmaster" parent="ksshiftmaster.menu_2"
+              action="ksshiftmaster.action_server"/>
+    -->
+  </data>
+</odoo>
