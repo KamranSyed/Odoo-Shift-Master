@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # See LICENSE and COPYRIGHT files for full copyright and licensing details.
 {
-    'name': "ksshiftmaster",
+    'name': "Shift Master",
 	'version': '0.1',
     'summary': """
         Helps manage duty shifts in Hospitals, Factories, Hotels and Ships etc.""",
